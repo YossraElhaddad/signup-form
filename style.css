@@ -110,7 +110,8 @@ p {
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
-    padding: 24px 0;
+    padding-top: 24px;
+    padding-bottom: 36px;
 }
 
 label {
@@ -145,6 +146,11 @@ input[type="email"]::placeholder {
     text-align: center;
 }
 
+.password div:first-child div::after {
+    content: "* Passwords don't match";
+    color: red;
+}
+
 .focus {
     border: 1px solid blue;
     box-shadow: 2px 2px 2px lightgray;
@@ -162,6 +168,8 @@ button {
     font-weight: bold;
     font-size: 20px;
     padding: 8px 16px;
+    border-radius: 10px;
+    border-style: none;
 }
 
 button:hover {
@@ -173,13 +181,14 @@ button:active {
     transform: scale(0.98);
 }
 
-form+div {
+form+div>p {
     margin: 24px var(--spacing);
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-form+div span {
+form+div a {
     color: #599426;
     font-weight: bold;
+    text-decoration: none;
 }
