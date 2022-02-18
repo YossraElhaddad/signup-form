@@ -139,6 +139,8 @@ input {
     min-width: 250px;
     border: 1px solid #E5E7EB;
     font-size: 1rem;
+    padding: 0 8px;
+    font-family: var(--font-type);
 }
 
 input[type="email"]::placeholder {
@@ -184,7 +186,7 @@ button:active {
 form+div>p {
     margin: 24px var(--spacing);
     font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-type);
 }
 
 form+div a {
