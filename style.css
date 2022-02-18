@@ -122,7 +122,7 @@ label {
     background-color: white;
     box-shadow: 0 3px 5px lightgray;
     border-radius: 8px;
-    width: 100%;
+    width: 100vmax;
 }
 
 .name,
