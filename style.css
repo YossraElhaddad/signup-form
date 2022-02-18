@@ -1,23 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Neucha&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap');
 * {
     margin: 0;
     padding: 0;
 }
 
+:root {
+    --font-type: Arial, Helvetica, sans-serif;
+    --text-color: rgb(250, 250, 250);
+    --spacing: 60px;
+}
+
 body {
     display: flex;
+    background-color: rgb(245, 245, 245);
+    /*background-image: linear-gradient(45deg, rgb(255, 135, 55), rgb(255, 200, 97), rgb(139, 255, 139), rgb(146, 255, 118));*/
+}
+
+p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: var(--font-type);
 }
 
 .side-bar {
     position: relative;
     left: 0;
     height: 100vh;
-    width: 450px;
+    width: 25vw;
 }
 
 .img-container {
-    --font-type: 'Neucha', cursive;
-    --text-color: rgb(250, 250, 250);
     background-image: url("nature.jpg");
     background-repeat: no-repeat;
     height: 100%;
@@ -44,9 +56,9 @@ body {
     vertical-align: middle;
     line-height: var(--container-height);
     justify-content: center;
-    font-size: 60px;
+    font-size: 4rem;
     color: var(--text-color);
-    font-family: var(--font-type);
+    font-family: 'Caesar Dressing', cursive;
     max-width: 100%;
     height: var(--container-height);
     padding: 4px 0;
@@ -66,4 +78,51 @@ body {
 
 .credit span {
     text-decoration: underline;
+}
+
+.body-content {
+    margin-top: 200px;
+}
+
+.text-container {
+    width: 70%;
+}
+
+.form-content,
+.text-container {
+    margin-left: var(--spacing);
+}
+
+.form-content::before {
+    content: "Let's do this!";
+    font-weight: 500;
+    font-family: sans-serif;
+    font-size: 1.4rem;
+    color: rgb(42, 42, 42);
+}
+
+label {
+    color: rgb(61, 61, 61);
+}
+
+.form-container {
+    background-color: white;
+    box-shadow: 0 3px 5px lightgray;
+    border-radius: 8px;
+}
+
+input {
+    border-radius: 5px;
+    min-height: 25px;
+    min-width: 250px;
+    border: 1px solid #E5E7EB;
+}
+
+.focus {
+    border: 1px solid blue;
+    box-shadow: 2px 2px 2px lightgray;
+}
+
+.error {
+    border: 1px solid red;
 }
